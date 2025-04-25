@@ -86,6 +86,11 @@ export default Homepage
 npx shadcn@latest add sheet
 ```
 
+## 2:15 Sample Products & Product List
+
+```shell
+```
+
 ## Create Product Card Component with shadcn
 
 ```shell
