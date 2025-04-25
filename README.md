@@ -39,6 +39,9 @@ npx create-next-app@latest nextjs-ts-ecommerce
 }
 ```
 
+## Create Next App & Assets
+
+
 ## Install https://ui.shadcn.com/
 
 ```shell
