@@ -135,7 +135,7 @@ npx prisma migrate dev --name init
 npx prisma studio
 ```
 
-## Seed Sample Data
+## 3:21 Seed Sample Data
 
 ```shell
 npx tsx ./db/seed
