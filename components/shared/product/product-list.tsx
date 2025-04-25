@@ -1,3 +1,5 @@
+import ProductCard from "./product-card";
+
 //sfc
 const ProductList = ({ data, title, limit }: { data: any; title?: string; limit?: number }) => {
     const limitedData = limit ? data.slice(0, limit) : data;
@@ -8,8 +10,13 @@ const ProductList = ({ data, title, limit }: { data: any; title?: string; limit?
         </h2>
         {limitedData.length > 0 ? (
             <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4'>
-                {limitedData.map((product: any, index: number) =>
-                    (<div key={index}>{product.name}</div>))}
+                {/* {limitedData.map((product: any, index: number) => */}
+                {limitedData.map((product: any) =>
+                (
+                    // <div key={index}>{product.name}</div>
+                    // <ProductCard key={index} product={product} />
+                    <ProductCard key={product.slug} product={product} />
+                ))}
             </div>
         ) : (<div>
             <p>No product found</p>

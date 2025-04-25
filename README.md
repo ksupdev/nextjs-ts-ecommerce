@@ -91,7 +91,7 @@ npx shadcn@latest add sheet
 ```shell
 ```
 
-## Create Product Card Component with shadcn
+## 2:16 Product Card Component with shadcn
 
 ```shell
 npx shadcn@latest add card
