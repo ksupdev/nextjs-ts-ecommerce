@@ -114,7 +114,7 @@ npm i -D prisma @prisma/client
 npx prisma init
 ```
 
-## Create Database with Prisma
+## 3:20 Prisma Models & Migrations
 
 - After config on `prisma/schema.prisma`, and then run command below
 
@@ -123,7 +123,7 @@ npx prisma generate
 
 ```
 
-- Run this command for migrate database, and after run complete you will get database script `prisma/migrations/20250421140714_init/migration.sql` and auto create table on database
+- Run this command for generate table on database
 
 ```shell
 npx prisma migrate dev --name init
