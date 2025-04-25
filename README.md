@@ -197,5 +197,22 @@ npx shadcn@latest add badge
 npm run build
 ```
 
+# Section 4 : Authentication With Next Auth
+
+## 4:30 Prisma User-Related Models
+
+- Config model (User, Account, Session, VerificationToken)
+
+```shell
+npx prisma generate
+npx prisma migrate dev --name add_user_based_tables
+```
+
+- Open prisma studio (http://localhost:5555)
+
+```shell
+npx prisma studio
+```
+
 
 
