@@ -103,7 +103,7 @@ npx shadcn@latest add card
 
 ```
 
-## Install Prisma
+## 3:19 PostgreSQL & Prisma Setup
 
 ```shell
 npm i -D prisma @prisma/client
