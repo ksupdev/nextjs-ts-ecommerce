@@ -140,13 +140,13 @@ npx prisma studio
 ```shell
 npx tsx ./db/seed
 ```
-## 3:21 Load Products From database
+## 3:22 Load Products From database
 
 ```shell
 
 ```
 
-## Zod Validation & Type Interface
+## 3:23 Zod Validation & Type Interface
 
 ```shell
 npm i zod
