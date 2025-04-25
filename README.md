@@ -65,6 +65,21 @@ npm i next-themes
 npx shadcn@latest add dropdown-menu
 ```
 
+## 2:13 Loading & Not Found Pages
+
+- How to add delay for test loading
+
+```typescript
+const delay = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
+
+const Homepage = async () => {
+  await delay(200);
+  return <>Homepage</>;
+}
+
+export default Homepage
+```
+
 ## Responsice Sheet Menu
 
 ```shell
