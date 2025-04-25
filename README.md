@@ -185,41 +185,10 @@ npx prisma generate
 npx shadcn@latest add badge
 ```
 
-## Product Images component
+## 3:26 Product Images component
 
-## Initial Deployment
-
-
-## Docker file
-docker-postgresql/docker-compose.yml
-
-```Docker
-version: '3.8'
-
-services:
-  postgres:
-    image: postgres:latest
-    container_name: my_postgres
-    environment:
-      POSTGRES_USER: myuser
-      POSTGRES_PASSWORD: mypassword
-      POSTGRES_DB: mydatabase
-    ports:
-      - "5432:5432"
-    volumes:
-      - postgres_data:/var/lib/postgresql/data
-    networks:
-      - postgres_network
-
-volumes:
-  postgres_data:
-
-networks:
-  postgres_network:
-
-
-# docker compose -f docker-postgresql/docker-compose.yml up -d
-
+```shell
+npx shadcn@latest add badge
 ```
 
 
