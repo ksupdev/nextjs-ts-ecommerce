@@ -41,12 +41,18 @@ npx create-next-app@latest nextjs-ts-ecommerce
 
 ## Create Next App & Assets
 
+## ShardCN UI Setup
 
-## Install https://ui.shadcn.com/
+- Install Shadcn and restart after install completed
 
 ```shell
 npx shadcn@latest init
 ```
+
+
+## Install https://ui.shadcn.com/
+
+
 - after run this command, you have to restart service now
 
 - Test Add new Button
