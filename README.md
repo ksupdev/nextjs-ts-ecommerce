@@ -48,17 +48,8 @@ npx create-next-app@latest nextjs-ts-ecommerce
 ```shell
 npx shadcn@latest init
 ```
+## 2:10 Root Layout & Constants
 
-
-## Install https://ui.shadcn.com/
-
-
-- after run this command, you have to restart service now
-
-- Test Add new Button
-```shell
-npx shadcn@latest add button
-```
 
 ## Create Header & Footer Components
 
