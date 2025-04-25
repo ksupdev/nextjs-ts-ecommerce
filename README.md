@@ -97,6 +97,12 @@ npx shadcn@latest add sheet
 npx shadcn@latest add card
 ```
 
+## 2:17 Product Card Component
+
+```shell
+
+```
+
 ## Install Prisma
 
 ```shell
