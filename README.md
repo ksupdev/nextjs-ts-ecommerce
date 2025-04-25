@@ -179,7 +179,7 @@ npx prisma generate
 
 - Add new file `db/prisma.ts`
 
-## Product Details Page
+## 3:25 Product Details Page
 
 ```shell
 npx shadcn@latest add badge
