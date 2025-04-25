@@ -58,9 +58,10 @@ npm i lucide-react
 npx shadcn@latest add button
 ```
 
-## Create Theme Mode Toggle
+## 2:12 Theme Mode Toggle
 
 ```shell
+npm i next-themes
 npx shadcn@latest add dropdown-menu
 ```
 
