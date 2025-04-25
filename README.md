@@ -191,5 +191,11 @@ npx shadcn@latest add badge
 npx shadcn@latest add badge
 ```
 
+## 3:28 A Note On ES Lint Error
+
+```shell
+npm run build
+```
+
 
 
