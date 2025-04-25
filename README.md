@@ -51,10 +51,11 @@ npx shadcn@latest init
 ## 2:10 Root Layout & Constants
 
 
-## Create Header & Footer Components
+## 2:11 Header & Footer Components
 
 ```shell
-
+npm i lucide-react
+npx shadcn@latest add button
 ```
 
 ## Create Theme Mode Toggle
