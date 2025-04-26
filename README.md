@@ -220,5 +220,24 @@ npx prisma studio
 npx tsx ./db/seed
 ```
 
+## 4:32 Next Auth Setup
+
+- https://next-auth.js.org/
+
+```shell
+npm i next-auth
+npm i @auth/prisma-adapter
+```
+
+- Generate openssl rand -base64 32
+
+```shell
+openssl rand -base64 32
+
+npm i bcrypt-ts
+```
+
+![alr set openssl](external_project/readme-images/4-32-00.png)
+
 
 
