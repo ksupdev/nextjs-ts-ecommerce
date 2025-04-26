@@ -225,7 +225,7 @@ npx tsx ./db/seed
 - https://next-auth.js.org/
 
 ```shell
-npm i next-auth
+npm install next-auth@beta
 npm i @auth/prisma-adapter
 ```
 
@@ -238,6 +238,18 @@ npm i bcrypt-ts
 ```
 
 ![alr set openssl](external_project/readme-images/4-32-00.png)
+
+## 4:33 Next Auth Catch All API Route
+
+- This project requie `"next-auth": "^5.0.0-beta.25",`
+
+- You can request for test after config `http://localhost:3000/api/auth/session`
+
+![alr set openssl](external_project/readme-images/4-33-00.png)
+
+```shell
+
+```
 
 
 
