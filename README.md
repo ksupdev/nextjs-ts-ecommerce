@@ -214,5 +214,11 @@ npx prisma migrate dev --name add_user_based_tables
 npx prisma studio
 ```
 
+## 4:31 Seed User Data
+
+```shell
+npx tsx ./db/seed
+```
+
 
 
