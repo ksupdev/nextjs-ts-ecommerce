@@ -257,6 +257,11 @@ npm i bcrypt-ts
 
 ```
 
+## 4:35 Auth Layout & Sign in Page
+
+```shell
+
+```
 
 
 
