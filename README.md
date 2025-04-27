@@ -263,5 +263,13 @@ npm i bcrypt-ts
 
 ```
 
+## 4:36 Credentials Sign in Form
+
+```shell
+npx shadcn@latest add label
+npx shadcn@latest add input
+
+```
+
 
 
