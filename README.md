@@ -287,6 +287,9 @@ npx shadcn@latest add input
 
 - You can test with this `http://localhost:3000/sign-in?callbackUrl=http://localhost:3000/product/polo-sporting-stretch-shirt` for checking if return sucess then it redirect to `callbackUrl`
 
+## 4:39 User Button & Sign Out
+
+
 
 
 

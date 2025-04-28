@@ -42,11 +42,11 @@ export const config = {
 
                     const isMatch = () => { return user.password === credentials.password };
 
-                    console.log('Input pass', user.password);
-                    console.log('credentials pass', credentials.password);
+                    // console.log('Input pass', user.password);
+                    // console.log('credentials pass', credentials.password);
 
                     // If password is correct, return user
-                    console.log('--- isMatch', isMatch);
+                    // console.log('--- isMatch', isMatch);
                     if (isMatch()) {
                         return {
                             id: user.id,
@@ -66,6 +66,8 @@ export const config = {
     ],
     callbacks: {
         async session({ session, user, trigger, token }: any) {
+            // console.log('--- session', session);
+
             //  Set the user ID from the token
             session.user.id = token.sub;
 
