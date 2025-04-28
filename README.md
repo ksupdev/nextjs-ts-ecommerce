@@ -306,6 +306,56 @@ npx prisma generate
 npx prisma migrate dev --name add_cart
 ```
 
+## 5:46 Add To Cart Component
+
+```shell
+npx shadcn@latest add toast
+npx shadcn@latest add sonner
+```
+- Implement Sonner instead of Toast.
+
+```typescript
+    // Handel successful add to cart
+        // Handle success add to cart
+        toast(`${item.name} added to cart ${res.message}`, {
+            action: {
+                label: 'Go To Cart',
+                onClick: () => router.push('/cart')
+            }, className: 'bg-primary text-white hover:bg-gray-800'
+        });
+
+```
+
+- implement sonner custom.
+```typescript
+    // Handel successful add to cart
+    toast.custom((t) => (
+      <div className="bg-white shadow-md rounded-lg p-4 border border-gray-200 flex items-center space-x-4">
+        <span className=" text-gray-700">{`${item.name} added to cart`}</span>
+        <Button
+          onClick={() => {
+            router.push('/cart'); // Navigate to cart page
+            toast.dismiss(t.id); // Dismiss toast after clicking
+          }}
+          className="ml-auto bg-blue-500 text-white px-3 py-1 rounded-md hover:bg-blue-600 transition"
+        >
+          Add to Cart
+        </Button>
+      </div>
+    ));
+
+```
+
+- implement sonner for error and overide css
+
+```typescript
+            toast.error(res.message, {
+                className: '!bg-red-500 !text-white !border !border-red-600 !shadow-sm'
+            });
+```
+
+
+
 
 
 ---
