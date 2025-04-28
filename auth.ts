@@ -35,19 +35,19 @@ export const config = {
                 console.log('Get user', JSON.stringify(user));
                 // Check if user exists and if the password matches
                 if (user && user.password) {
-                    // const isMatch = await compareSync(
-                    //     credentials.password as string,
-                    //     user.password
-                    // );
+                    const isMatch = await compareSync(
+                        credentials.password as string,
+                        user.password
+                    );
 
-                    const isMatch = () => { return user.password === credentials.password };
+                    // const isMatch = () => { return user.password === credentials.password };
 
                     // console.log('Input pass', user.password);
                     // console.log('credentials pass', credentials.password);
 
                     // If password is correct, return user
                     // console.log('--- isMatch', isMatch);
-                    if (isMatch()) {
+                    if (isMatch) {
                         return {
                             id: user.id,
                             name: user.name,
