@@ -283,6 +283,10 @@ npx shadcn@latest add input
 
 ![test get data](external_project/readme-images/4-37-00.png)
 
+## 4:38 Callback URL Redirect
+
+- You can test with this `http://localhost:3000/sign-in?callbackUrl=http://localhost:3000/product/polo-sporting-stretch-shirt` for checking if return sucess then it redirect to `callbackUrl`
+
 
 
 
