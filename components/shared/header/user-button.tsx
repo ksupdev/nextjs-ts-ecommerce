@@ -53,12 +53,6 @@ const UserButton = async () => {
                         </Button>
                     </form>
                 </DropdownMenuItem>
-                <DropdownMenuItem asChild>
-                    <Link href="/orders">Orders</Link>
-                </DropdownMenuItem>
-                <DropdownMenuItem onClick={signOutUser} className="cursor-pointer">
-                    Sign Out
-                </DropdownMenuItem>
             </DropdownMenuContent>
         </DropdownMenu>
     </div>;

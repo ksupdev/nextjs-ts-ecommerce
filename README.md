@@ -295,6 +295,7 @@ npx shadcn@latest add input
 
 ## 4:42 Sign up Error Handling
 
+## 4:43 Customize Token With JWT Callback
 
 
 
