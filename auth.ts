@@ -23,6 +23,8 @@ export const config = {
             async authorize(credentials) {
                 if (credentials == null) return null;
 
+
+
                 // Find user in database
                 const user = await prisma.user.findFirst({
                     where: {
@@ -30,21 +32,31 @@ export const config = {
                     },
                 });
 
+                console.log('Get user', JSON.stringify(user));
                 // Check if user exists and if the password matches
                 if (user && user.password) {
-                    const isMatch = await compareSync(
-                        credentials.password as string,
-                        user.password
-                    );
+                    // const isMatch = await compareSync(
+                    //     credentials.password as string,
+                    //     user.password
+                    // );
+
+                    const isMatch = () => { return user.password === credentials.password };
+
+                    console.log('Input pass', user.password);
+                    console.log('credentials pass', credentials.password);
 
                     // If password is correct, return user
-                    if (isMatch) {
+                    console.log('--- isMatch', isMatch);
+                    if (isMatch()) {
                         return {
                             id: user.id,
                             name: user.name,
                             email: user.email,
                             role: user.role,
                         };
+                    } else {
+                        console.log('--- Password does not match');
+                        throw new Error('Password does not match');
                     }
                 }
                 // If user does not exist or password does not match return null

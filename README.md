@@ -271,5 +271,19 @@ npx shadcn@latest add input
 
 ```
 
+## 4:37 Hook Up Sign In Form
+
+```shell
+npx shadcn@latest add label
+npx shadcn@latest add input
+
+```
+
+- If you sign in successfully, you can call the API at `http://localhost:3000/api/auth/session` to get the session data
+
+![test get data](external_project/readme-images/4-37-00.png)
+
+
+
 
 
