@@ -291,7 +291,9 @@ npx shadcn@latest add input
 
 ## 4:40 Sign up Zod Schema & Action
 
-## 4:40 Sign up Error Handling
+## 4:41 Sign up Page & Form
+
+## 4:42 Sign up Error Handling
 
 
 
