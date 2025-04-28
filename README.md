@@ -289,6 +289,10 @@ npx shadcn@latest add input
 
 ## 4:39 User Button & Sign Out
 
+## 4:40 Sign up Zod Schema & Action
+
+
+
 
 
 
