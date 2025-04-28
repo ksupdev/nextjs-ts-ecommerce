@@ -297,6 +297,15 @@ npx shadcn@latest add input
 
 ## 4:43 Customize Token With JWT Callback
 
+## 5:45 Card Zod Schema & Prisma Modal
+
+- After setup validators.ts and schema.prisma , you have to run command below
+
+```shell
+npx prisma generate
+npx prisma migrate dev --name add_cart
+```
+
 
 
 ---
