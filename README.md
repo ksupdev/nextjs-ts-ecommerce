@@ -298,6 +298,83 @@ npx shadcn@latest add input
 
 
 
+---
+
+## NextAuth Custom Session Data Guide
+
+### Problem
+
+By default, NextAuth only includes a limited set of user properties (name, email, and image) in the session object. If you need to add custom properties like `id` and `role`, you need to explicitly include them.
+
+### Solution
+
+To add custom user data to your NextAuth session, you need to implement both the `jwt` and `session` callbacks:
+
+```typescript
+export const config = {
+  // ... other NextAuth config
+  callbacks: {
+    async jwt({ token, user }) {
+      // When a user signs in, capture their data in the token
+      if (user) {
+        token.id = user.id;
+        token.role = user.role;
+      }
+      return token;
+    },
+    
+    async session({ session, token }) {
+      // Transfer data from the token to the session
+      if (token) {
+        session.user.id = token.id;
+        session.user.role = token.role;
+      }
+      return session;
+    },
+  }
+};
+```
+
+### How It Works
+
+1. The `authorize` function in your credentials provider returns user data when credentials are verified
+2. Data flows into the JWT token via the `jwt` callback when a user signs in
+3. The `session` callback transfers data from the token to the session object available in your app
+
+### Implementation Steps
+
+1. Add the `jwt` callback to store your custom user fields in the token
+2. Add the `session` callback to copy those fields to the session object
+3. Access the additional data in your components using the session object
+
+### Accessing Custom Data
+
+After implementing these callbacks, you can access your custom data in your components:
+
+```typescript
+import { useSession } from "next-auth/react";
+
+export default function ProfilePage() {
+  const { data: session } = useSession();
+  
+  return (
+    <div>
+      <p>User ID: {session?.user.id}</p>
+      <p>Role: {session?.user.role}</p>
+    </div>
+  );
+}
+```
+
+### Important Notes
+
+- The `jwt` callback runs when a token is created or updated
+- The `session` callback runs whenever the session is checked
+- Make sure your `authorize` function returns all the data you want to include in the session
+
+
+
+
 
 
 
