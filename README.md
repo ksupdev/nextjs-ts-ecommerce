@@ -380,7 +380,9 @@ export {auth as middleware} from '@/auth';
 ## 5:48 Get Item From Cart
 
 
+## 5:49 Price Calc & Add To Database
 
+## 5:50 Handle Quantity & Multiple Product
 
 
 
