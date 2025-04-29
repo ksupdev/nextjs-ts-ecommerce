@@ -354,6 +354,30 @@ npx shadcn@latest add sonner
             });
 ```
 
+## 5:47 Session Cart ID Cookie
+
+### Session Noted
+
+- In this session, I need to implement a function to generate a sessionCartID at the middleware layer. When a user accesses the app, it will automatically generate a sessionCartID.
+
+### Implement detail
+
+- In the video, it imports `auth.ts` for use in the middleware as shown in the code below, but it doesn't work because I found an issue: `auth.ts` has many connections to third-party services, such as Prisma connecting to PostgreSQL. 
+
+```typescript
+//middleware.ts
+
+export {auth as middleware} from '@/auth';
+
+```
+
+- So I decided to create `auth.config.ts` to separate the configuration from `auth.ts`, and then import it into the middleware, similar to the current code.
+
+- I found an interesting issue: I cannot use console.log in `auth.config.ts` because it runs in the middleware layer.
+
+![test get data](external_project/readme-images/5-47-00.png)
+
+
 
 
 

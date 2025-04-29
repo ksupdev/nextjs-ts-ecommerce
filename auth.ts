@@ -68,8 +68,8 @@ export const config = {
         async jwt({ token, user, trigger, session }: any) {
             // Assign user fields to token
             if (user) {
-                console.log('jwt-token', JSON.stringify(token));
-                console.log('jwt-User', JSON.stringify(user));
+                // console.log('jwt-token', JSON.stringify(token));
+                // console.log('jwt-User', JSON.stringify(user));
 
                 // token.id = user.id;
                 token.role = user.role;
@@ -95,8 +95,8 @@ export const config = {
             session.user.role = token.role;
             session.user.name = token.name;
 
-            console.log('session-token', JSON.stringify(token));
-            console.log('session-User', JSON.stringify(user));
+            // console.log('session-token', JSON.stringify(token));
+            // console.log('session-User', JSON.stringify(user));
 
             // If there is an update, set the user name
             if (trigger === 'update') {
@@ -104,7 +104,7 @@ export const config = {
             }
 
             return session;
-        },
+        }
     }
 };
 
