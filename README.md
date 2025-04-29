@@ -377,6 +377,8 @@ export {auth as middleware} from '@/auth';
 
 ![test get data](external_project/readme-images/5-47-00.png)
 
+## 5:48 Get Item From Cart
+
 
 
 
