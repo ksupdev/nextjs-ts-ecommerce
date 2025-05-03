@@ -481,6 +481,8 @@ function CartItem({ product }) {
 5. Sync client state with server after operations complete
 
 
+## 5:53 Smooth UI With useTransition Hook
+
 
 
 
