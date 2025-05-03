@@ -384,6 +384,8 @@ export {auth as middleware} from '@/auth';
 
 ## 5:50 Handle Quantity & Multiple Product
 
+## 5:51 Remove Cart Action
+
 
 
 ---
