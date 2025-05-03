@@ -483,6 +483,8 @@ function CartItem({ product }) {
 
 ## 5:53 Smooth UI With useTransition Hook
 
+## 5:55 Cart Page
+
 
 
 
