@@ -491,6 +491,12 @@ function CartItem({ product }) {
 npx shadcn@latest add table
 ```
 
+## 5:57 Subtotal Card
+
+```shell
+npx shadcn@latest add table
+```
+
 
 
 

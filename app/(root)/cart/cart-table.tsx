@@ -10,6 +10,8 @@ import Image from "next/image";
 import { Table, TableBody, TableHeader, TableHead, TableRow, TableCell } from '@/components/ui/table';
 import { Button } from "@/components/ui/button";
 import { toast } from "sonner";
+import { formatCurrency } from "@/lib/utils";
+import { Card, CardContent } from "@/components/ui/card";
 
 const toastErrorClassName = '!bg-red-500 !text-white !border !border-red-600 !shadow-sm';
 
@@ -91,7 +93,27 @@ const CartTable = ({ cart }: { cart?: Cart }) => {
                         </TableBody>
                     </Table>
                 </div>
+
+                <Card>
+                    <CardContent className='p-4 gap-4'>
+                        <div className="pb-3 text-xl">
+                            Subtotal ({cart.items.reduce((a, c) => {
+                                return a + c.qty;
+                            }, 0)} items):
+                            <span className="font-bold">
+                                {formatCurrency(cart.itemsPrice)}
+                            </span>
+                        </div>
+                        <Button className="w-full" disabled={isPending} onClick={() => startTransition(() => router.push('/shipping-address'))}>
+                            {isPending ? <Loader className='h-4 w-4 animate-spin' /> : (
+                                <ArrowRight className='w-4 h-4' />
+                            )}
+                            {' '} Procedd to Checkout
+                        </Button>
+                    </CardContent>
+                </Card>
             </div>
+
         )}
     </>);
 }
