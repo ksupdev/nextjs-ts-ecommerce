@@ -511,10 +511,12 @@ npx shadcn@latest add table
 
 ## 5:60 Update User Address
 
+## 5:61 Checkout Steps Component
 
 
 
----
+
+--------------------------------------------------------
 
 ## NextAuth Custom Session Data Guide
 
