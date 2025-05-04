@@ -502,6 +502,13 @@ npx shadcn@latest add table
 ```shell
 ```
 
+## 5:59 Shipping Address & Form
+
+```shell
+  npm i react-hook-form @hookform/resolvers
+  npx shadcn@latest add form
+```
+
 
 
 
