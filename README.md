@@ -485,6 +485,12 @@ function CartItem({ product }) {
 
 ## 5:55 Cart Page
 
+## 5:56 ShadCN UI Table
+
+```shell
+npx shadcn@latest add table
+```
+
 
 
 
