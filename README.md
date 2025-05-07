@@ -1,5 +1,15 @@
 # Project
 
+## start project
+
+```
+npm i
+docker compose -f docker-postgresql/docker-compose.yml up -d
+npx prisma migrate dev --name init
+npx tsx ./db/seed
+
+```
+
 ## command
 ```shell
 npm run dev 
