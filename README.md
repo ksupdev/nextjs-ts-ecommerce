@@ -1,15 +1,5 @@
 # Project
 
-## start project
-
-```
-npm i
-docker compose -f docker-postgresql/docker-compose.yml up -d
-npx prisma migrate dev --name init
-npx tsx ./db/seed
-
-```
-
 ## command
 ```shell
 npm run dev 
@@ -523,6 +513,9 @@ npx shadcn@latest add table
 
 ## 5:61 Checkout Steps Component
 
+## 5:62 Persist Session Cart
+
+Not work
 
 
 
