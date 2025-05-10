@@ -517,6 +517,10 @@ npx shadcn@latest add table
 
 Not work
 
+## 5:67 Protecting Paths
+
+
+
 
 
 --------------------------------------------------------
