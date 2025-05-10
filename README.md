@@ -517,7 +517,11 @@ npx shadcn@latest add table
 
 Not work
 
-## 5:67 Protecting Paths
+## 5:63 Protecting Paths
+
+## 7:65 Payment Method Action & Zod Schema
+
+
 
 
 
